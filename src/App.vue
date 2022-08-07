@@ -36,7 +36,7 @@ export default {
     });
     onMounted(() => {
       const items = localStorage.getItem("todos");
-      todos.list = items ? JSON.parse() : [];
+      todos.list = items ? JSON.parse(items) : [];
     });
     const totalTodo = computed(() => {
       return todos.list.length;

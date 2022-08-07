@@ -35,7 +35,7 @@ export default {
       default: [],
     },
   },
-  setup({ emit }) {
+  setup(props, { emit }) {
     const deleteTodo = (index) => {
       emit("deleteTodo", index);
     };
